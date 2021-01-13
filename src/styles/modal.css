@@ -15,7 +15,7 @@ tr ::first-letter {
 
 .modal-head-content {
   position: absolute;
-  color: #fff;
+  color: var(--white);
   right: 0;
 }
 
@@ -36,7 +36,7 @@ tr ::first-letter {
 .modalbox {
   border-radius: var(--borderRadius);
   text-align: center;
-  background: #fff;
+  background: var(--white);
   width: 600px;
   height: 550px;
   margin: 0 .6rem;
@@ -53,7 +53,7 @@ tr ::first-letter {
 
 .modal-head-content span.cross {
   background: var(--primary);
-  color: #fff;
+  color: var(--white);
   width: 2rem;
   height: 3rem;
   font-weight: 900;
@@ -73,7 +73,7 @@ tr ::first-letter {
 .table-btn {
   border-radius: var(--borderRadius);
   background: rgb(110, 201, 110);
-  color: #fff;
+  color: var(--white);
   padding: .4rem .7rem;
   border: none;
   margin: .1rem;
