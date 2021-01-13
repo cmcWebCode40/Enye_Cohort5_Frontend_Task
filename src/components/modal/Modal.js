@@ -11,12 +11,10 @@ const Modal = ({ open, setOpen, children }) => {
 		}
 
 		// Prevent scolling
-		document.body.style.overflow = "hidden";
 		document.addEventListener("keydown", onKeyDown);
 
 		// Clear things up when unmounting this component
 		return () => {
-			document.body.style.overflow = "visible";
 			document.removeEventListener("keydown", onKeyDown);
 		};
 	});
