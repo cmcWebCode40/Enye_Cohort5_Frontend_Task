@@ -1,0 +1,155 @@
+/*****USer Table ******/
+
+
+.table-head {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  background: var(--greyDark);
+  color: #fff;
+  text-align: left;
+  padding: .8rem .7rem;
+  border: none;
+  box-shadow: 0 0.8rem 2rem rgba(#dadada, 0.05);  
+}
+
+.magic-table {
+  border-collapse: collapse;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 1rem;
+  border-radius: var(--borderRadius);
+  background-color: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.magic-table tbody tr:nth-child(odd) {
+  background-color: rgba(100, 150, 250, 0.05);
+}
+
+.magic-table td, th {
+  padding: 1.4rem .5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .magic-table {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .magic-table thead {
+    display: none;
+  }
+  .magic-table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.3rem;
+    border-radius: var(--borderRadius);
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .magic-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  .magic-table td {
+    padding: 0.25rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    margin: .6rem 0;
+  }
+
+  .magic-table td:nth-child(1)::before {
+      content: "First Name: ";
+  }
+  .magic-table td:nth-child(2)::before {
+    content: "Last Name: ";
+  }
+  .magic-table td:nth-child(3)::before {
+    content: "User Name: ";
+  }
+  .magic-table td:nth-child(4)::before {
+    content: "Gender: ";
+  }
+  .magic-table td:nth-child(5)::before {
+    content: "Email: ";
+  }
+  .magic-table td:nth-child(6)::before {
+    content: "Payment Method: ";
+  }
+  .magic-table td:nth-child(7)::before {
+    content: "Credit Card Type: ";
+  }
+  .magic-table td:nth-child(8)::before {
+    content: "";
+    border: none;
+  }
+  .magic-table td::before {
+    font-weight: bold;
+  }
+}
+
+.user-wrapper {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3.4rem 0;
+}
+
+.user-list {
+  list-style: none;
+}
+
+.user-list li {
+  width: 370px;
+  margin: 7px 0;
+  color: #413004;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.user-list li:active, li:hover {
+  transition: 0.3s;
+  background-color: #fff8e4;
+}
+
+.user-list li::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  z-index: 1;
+  transform: scaleX(0.85) scaleY(0.85);
+  transition: 0.3s;
+}
+
+.content {
+  border-radius: var(--borderRadius);
+  background-color: #fff;
+  margin: .7rem 0;
+  padding: .5rem ;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+.content i {
+  margin: 0 .4rem;
+}
+
+.content h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.content h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 6px;
+  opacity: 0.9;
+}
+
